@@ -1,0 +1,23 @@
+.logo {
+    width: 70px;
+  }
+
+.navbar {
+    padding: 5px;
+    background-color: #5fa4ee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.list li {
+    padding: 7px;
+    color: white;
+  }
+  
