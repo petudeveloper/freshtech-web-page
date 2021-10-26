@@ -9,3 +9,9 @@
   height: 85vh;
   position: sticky;
 }
+
+@media (max-width: 667px) {
+  .mainImgHome {
+    height: 50vh;
+  }
+}
