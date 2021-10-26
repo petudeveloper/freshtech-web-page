@@ -22,13 +22,13 @@ const NavBar = () => {
           <Link to="/home">
             <li>Inicio</li>
           </Link>
-          <Link to="/nosotros">
+          <Link to="/about-us">
             <li>Nosotros</li>
           </Link>
-          <a href="#servicios-container">
+          <a href="/home#servicios-container">
             <li>Servicios</li>
           </a>
-          <a href="#lineas-container">
+          <a href="/home#lineas-container">
             <li>Lineas</li>
           </a>
           <li>Contacto</li>
@@ -47,17 +47,17 @@ const NavBar = () => {
               </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <Link to="/nosotros">
+              <Link to="/about-us">
                 <span>Nosotros</span>
               </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <a href="#servicios-container">
+              <a href="/home#servicios-container">
                 <span>Servicios</span>
               </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <a href="#lineas-container">
+              <a href="/home#lineas-container">
                 <span>Lineas</span>
               </a>
             </DropdownItem>

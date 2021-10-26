@@ -3,6 +3,7 @@ import {
 } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/home" component={Home} />
+          <Route path="/about-us" component={AboutUs} />
           <Redirect from="/" to="/home" />
         </Switch>
       </div>
