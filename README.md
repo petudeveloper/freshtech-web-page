@@ -18,7 +18,7 @@
 
 ## Live demo
 
-[Live Demo Link](https://angry-tereshkova-f90f0c.netlify.app/)
+[Live Demo Link](https://freshtech-colombia.netlify.app/)
 
 ## Available Scripts
 
