@@ -65,3 +65,30 @@ ul {
     color: #0c5e9f;
     background-color: #03c5de;
   }
+
+  @media (max-width: 768px) {
+    .cardsContainer{
+      flex-direction: column;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonContainer {
+        position: relative;
+    }
+
+    .image {
+        max-width: 350px;
+    }
+
+    .information{
+        font-size: 1.1rem;
+    }
+  }

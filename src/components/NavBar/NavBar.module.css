@@ -20,8 +20,7 @@
 
 .list li {
     padding: 7px;
-    color: #0c5e9f;
-    font-weight: bold;
+    color: #ffffff;
   }
 
 .list li:hover, .logo:hover {
@@ -29,4 +28,3 @@
     text-shadow: 2px 2px 8px white;
     cursor: pointer;
   }
-  

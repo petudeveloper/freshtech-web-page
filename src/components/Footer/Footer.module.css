@@ -45,3 +45,15 @@
 .correo:hover {
     text-shadow: 2px 2px 8px white;
   }
+
+  
+  @media (max-width: 768px) {
+    .contactContainer{
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact{
+        margin: 0 0 25px 0;
+    }
+  }
+  
