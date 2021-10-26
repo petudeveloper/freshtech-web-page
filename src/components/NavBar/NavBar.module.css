@@ -28,3 +28,35 @@
     text-shadow: 2px 2px 8px white;
     cursor: pointer;
   }
+
+  .dropdown{
+      display: none;
+      margin-left: 10px;
+  }
+
+  .dropdownBtn {
+      color: #03c5de !important;
+      background-color: #0c5e9f !important;
+      border: none !important;
+  }
+
+  .dropdownItem{
+      text-align: center;
+      color: #0c5e9f !important;
+  }
+  .dropdownItem:hover{
+      
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+      .navbar{
+        flex-direction: row-reverse;
+      }
+    .list{
+      display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+  }
