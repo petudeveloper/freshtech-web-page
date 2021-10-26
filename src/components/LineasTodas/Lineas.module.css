@@ -68,8 +68,8 @@ h3 {
 }
 
 .sm {
-    display: none;
-  }
+  display: none;
+}
 
 @media (max-width: 1024px) {
   .cardsContainer {
@@ -101,17 +101,16 @@ h3 {
   }
 
   .cardName {
-      margin: 7px 0;
+    margin: 7px 0;
   }
-
-
 }
 
 @media (max-width: 684px) {
-    .sm {
-        display: block;
-      }
-    .lg {
-        display: none;
-      }
+  .sm {
+    display: block;
+  }
+
+  .lg {
+    display: none;
+  }
 }
