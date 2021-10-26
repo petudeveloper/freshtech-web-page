@@ -12,7 +12,8 @@ const Lineas = () => {
 
   return (
     <ul id="linea-container" className={styles.container}>
-      <h1 className={styles.textH1Home}>INSTALACIÓN • MANTENIMIENTO • DISEÑO</h1>
+      <h1 className={`${styles.textH1Home} ${styles.lg}`}>INSTALACIÓN • MANTENIMIENTO • DISEÑO</h1>
+      <h1 className={`${styles.textH1Home} ${styles.sm}`}>INSTALACIÓN, MANTENIMIENTO, DISEÑO</h1>
       <div className={styles.cardsContainer}>
         <Card information={cardsInformation.Industrial} name="Industrial" />
         <Card information={cardsInformation.Comercial} name="Comercial" />

@@ -4,7 +4,7 @@ import styles from './Lineas.module.css';
 const Card = ({ name, information }) => (
   <li id={`${name}Card`} className={styles.cardContainer}>
     <img className={styles.image} src={`./images/lineas/${name}.jpg`} alt={`${name}Card`} />
-    <h3>
+    <h3 className={styles.cardName}>
       Linea
       {name}
     </h3>
