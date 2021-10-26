@@ -4,6 +4,7 @@ import {
   Dropdown, DropdownItem, DropdownMenu, DropdownToggle,
 } from 'reactstrap';
 import { GoGrabber } from 'react-icons/go';
+import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 
 const NavBar = () => {
@@ -14,12 +15,22 @@ const NavBar = () => {
   return (
     <div>
       <nav className={styles.navbar}>
-        <img className={styles.logo} src="./images/FRESHTECH-logo.png" alt="freshtech-logo" />
+        <Link to="/">
+          <img className={styles.logo} src="./images/FRESHTECH-logo.png" alt="freshtech-logo" />
+        </Link>
         <ul className={styles.list}>
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Servicios</li>
-          <li>Lineas</li>
+          <Link to="/home">
+            <li>Inicio</li>
+          </Link>
+          <Link to="/nosotros">
+            <li>Nosotros</li>
+          </Link>
+          <a href="#servicios">
+            <li>Servicios</li>
+          </a>
+          <a href="#IndustrialCard">
+            <li>Lineas</li>
+          </a>
           <li>Contacto</li>
 
         </ul>
