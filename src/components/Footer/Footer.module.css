@@ -35,4 +35,13 @@
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 5px;
 }
+
+.name {
+    font-weight: bold;
+}
+
+.correo:hover {
+    text-shadow: 2px 2px 8px white;
+  }

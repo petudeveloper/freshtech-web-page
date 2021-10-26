@@ -52,8 +52,16 @@ ul {
 
   .button {
       border: none;
-      border-radius: 5px;
+      border-radius: 3px;
       padding: 5px 15px;
       background-color: #0c5e9f;
       color: #03c5de;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 8px rgb(173, 206, 255);
+    cursor: pointer;
+    color: #0c5e9f;
+    background-color: #03c5de;
   }
