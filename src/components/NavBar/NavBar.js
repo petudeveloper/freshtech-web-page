@@ -25,10 +25,10 @@ const NavBar = () => {
           <Link to="/nosotros">
             <li>Nosotros</li>
           </Link>
-          <a href="#servicios">
+          <a href="#servicios-container">
             <li>Servicios</li>
           </a>
-          <a href="#IndustrialCard">
+          <a href="#lineas-container">
             <li>Lineas</li>
           </a>
           <li>Contacto</li>
@@ -42,16 +42,24 @@ const NavBar = () => {
 
           <DropdownMenu>
             <DropdownItem className={styles.dropdownItem}>
-              Inicio
+              <Link to="/home">
+                <span>Inicio</span>
+              </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              Nosotros
+              <Link to="/nosotros">
+                <span>Nosotros</span>
+              </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              Servicios
+              <a href="#servicios-container">
+                <span>Servicios</span>
+              </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              Lineas
+              <a href="#lineas-container">
+                <span>Lineas</span>
+              </a>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
               Contacto

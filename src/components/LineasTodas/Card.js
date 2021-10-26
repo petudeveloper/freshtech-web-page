@@ -6,6 +6,7 @@ const Card = ({ name, information }) => (
     <img className={styles.image} src={`./images/lineas/${name}.jpg`} alt={`${name}Card`} />
     <h3 className={styles.cardName}>
       Linea
+      {' '}
       {name}
     </h3>
     <p className={styles.information}>{information}</p>
