@@ -9,7 +9,7 @@ const Contacto = ({
     <p className={`${styles.description} ${styles.name}`}>{name}</p>
     <p className={`${styles.description} ${styles.yellow}`}>{cargo}</p>
     <p className={`${styles.description} ${styles.yellow}`}>{cel}</p>
-    <a href="/" className={`${styles.description} ${styles.correo}`}>{correo}</a>
+    <a href={`mailto:${correo}`} className={`${styles.description} ${styles.correo}`}>{correo}</a>
   </div>
 );
 
