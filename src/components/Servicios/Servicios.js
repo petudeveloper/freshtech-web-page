@@ -14,7 +14,9 @@ const Servicios = () => (
           <li>2. Mantenimientos preventivos y correctivos.</li>
         </ul>
         <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>Cotizar</button>
+          <button type="button" className={styles.button}>
+            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+          </button>
         </div>
       </li>
       <li id="diseño-Card" className={styles.cardContainer}>
@@ -32,7 +34,9 @@ const Servicios = () => (
           <li>4. Sistemas de ventilación y extracción.</li>
         </ul>
         <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>Cotizar</button>
+          <button type="button" className={styles.button}>
+            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+          </button>
         </div>
       </li>
       <li id="Instalacion-Card" className={styles.cardContainer}>
@@ -50,7 +54,9 @@ const Servicios = () => (
           <li>4. Sistemas de ventilación y extracción.</li>
         </ul>
         <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>Cotizar</button>
+          <button type="button" className={styles.button}>
+            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+          </button>
         </div>
       </li>
       <li id="Mantenimiento-Card" className={styles.cardContainer}>
@@ -64,7 +70,9 @@ const Servicios = () => (
           <li>3. Mantenimiento predictivo.</li>
         </ul>
         <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>Cotizar</button>
+          <button type="button" className={styles.button}>
+            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+          </button>
         </div>
       </li>
     </ul>

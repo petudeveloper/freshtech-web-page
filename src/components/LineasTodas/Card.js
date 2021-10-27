@@ -11,7 +11,9 @@ const Card = ({ name, information }) => (
     </h3>
     <p className={styles.information}>{information}</p>
     <div className={styles.buttonContainer}>
-      <button type="button" className={styles.button}>Más Información</button>
+      <button type="button" className={styles.button}>
+        <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Más Información</a>
+      </button>
     </div>
   </li>
 );

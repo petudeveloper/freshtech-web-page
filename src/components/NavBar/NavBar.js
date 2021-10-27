@@ -23,13 +23,11 @@ const NavBar = () => {
           <Link to="/about-us">
             <li>Nosotros</li>
           </Link>
-          <a href="/home#servicios-container">
-            <li>Servicios</li>
+          <a href="mailto:freshtech.colombia@gmail.com">
+            <li>
+              Contacto
+            </li>
           </a>
-          <a href="/home#lineas-container">
-            <li>Lineas</li>
-          </a>
-          <li>Contacto</li>
         </ul>
         <Dropdown isOpen={dropdown} toggle={openCloseDropdown} className={styles.dropdown}>
           <DropdownToggle className={styles.dropdownBtn}>
@@ -47,17 +45,7 @@ const NavBar = () => {
               </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <a href="/home#servicios-container">
-                <span>Servicios</span>
-              </a>
-            </DropdownItem>
-            <DropdownItem className={styles.dropdownItem}>
-              <a href="/home#lineas-container">
-                <span>Lineas</span>
-              </a>
-            </DropdownItem>
-            <DropdownItem className={styles.dropdownItem}>
-              Contacto
+              <a href="mailto:freshtech.colombia@gmail.com">Contacto</a>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

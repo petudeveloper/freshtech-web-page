@@ -48,8 +48,11 @@
   border: none;
   border-radius: 3px;
   padding: 5px 15px;
-  background-color: #0c5e9f;
-  color: #03c5de;
+  background-color: #0a4e87;
+}
+
+.buttonSpan {
+  color: #00d6f2;
 }
 
 .button:hover {
