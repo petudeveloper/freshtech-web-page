@@ -54,6 +54,7 @@
 
 .misionInformation {
   padding: 25px;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
