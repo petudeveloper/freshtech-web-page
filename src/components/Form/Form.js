@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
 import styles from './Form.module.css';
 
 class Form extends React.Component {
@@ -89,6 +90,14 @@ class Form extends React.Component {
             className={styles.button}
           />
         </form>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=573197292278">
+            <BsWhatsapp className={styles.icon} />
+          </a>
+          <a href="mailto:freshtech.colombia@gmail.com">
+            <BsMailbox className={styles.icon} />
+          </a>
+        </div>
       </div>
     );
   }

@@ -41,4 +41,11 @@
     padding: 5px 15px;
     background-color: #0a4e87;
     color: #00d6f2;
+    margin-top: 15px;
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #0c5e9f;
+    margin: 30px 15px;
 }
