@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import styles from './Servicios.module.css';
 
 const Servicios = () => (
@@ -15,7 +16,7 @@ const Servicios = () => (
         </ul>
         <div className={styles.buttonContainer}>
           <button type="button" className={styles.button}>
-            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
           </button>
         </div>
       </li>
@@ -35,7 +36,7 @@ const Servicios = () => (
         </ul>
         <div className={styles.buttonContainer}>
           <button type="button" className={styles.button}>
-            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+            <Link to="/cotizar" className={styles.buttonSpan}>Cotizar</Link>
           </button>
         </div>
       </li>
@@ -55,7 +56,7 @@ const Servicios = () => (
         </ul>
         <div className={styles.buttonContainer}>
           <button type="button" className={styles.button}>
-            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
           </button>
         </div>
       </li>
@@ -71,7 +72,7 @@ const Servicios = () => (
         </ul>
         <div className={styles.buttonContainer}>
           <button type="button" className={styles.button}>
-            <a href="mailto:freshtech.colombia@gmail.com" className={styles.buttonSpan}>Cotizar</a>
+            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
           </button>
         </div>
       </li>

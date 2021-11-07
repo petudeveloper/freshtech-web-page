@@ -23,11 +23,11 @@ const NavBar = () => {
           <Link to="/about-us">
             <li>Nosotros</li>
           </Link>
-          <a href="mailto:freshtech.colombia@gmail.com">
+          <Link to="/cotizar">
             <li>
               Contacto
             </li>
-          </a>
+          </Link>
         </ul>
         <Dropdown isOpen={dropdown} toggle={openCloseDropdown} className={styles.dropdown}>
           <DropdownToggle className={styles.dropdownBtn}>
