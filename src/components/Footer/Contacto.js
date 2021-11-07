@@ -1,4 +1,5 @@
 import { PropTypes } from 'prop-types';
+import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
 import styles from './Footer.module.css';
 
 const Contacto = ({
@@ -9,9 +10,15 @@ const Contacto = ({
     <p className={`${styles.description} ${styles.name}`}>{name}</p>
     <p className={`${styles.description} ${styles.yellow}`}>{cargo}</p>
     <p className={`${styles.description} ${styles.link}`}>
-      <a href={`https://api.whatsapp.com/send?phone=57${cel}`}>{`+57 ${cel}`}</a>
+      <a href={`https://api.whatsapp.com/send?phone=57${cel}`}>
+        <BsWhatsapp className={styles.icon} />
+        {`+57 ${cel}`}
+      </a>
     </p>
-    <a href={`mailto:${correo}`} className={`${styles.description} ${styles.link}`}>{correo}</a>
+    <a href={`mailto:${correo}`} className={`${styles.description} ${styles.link}`}>
+      <BsMailbox className={styles.icon} />
+      {correo}
+    </a>
   </div>
 );
 
