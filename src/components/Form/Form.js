@@ -35,7 +35,7 @@ class Form extends React.Component {
         <p>
           Háganos su consulta diligenciando el siguiente formulario,
           escribiéndonos al WhatsApp,
-          o bien escribiéndonos un correo clickeando en los botones de abajo.
+          o escribiéndonos un correo.
         </p>
         <form className={styles.form}>
           <label className={styles.label} htmlFor="name">
