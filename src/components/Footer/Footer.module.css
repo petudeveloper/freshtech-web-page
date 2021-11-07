@@ -42,11 +42,11 @@
   font-weight: bold;
 }
 
-.correo {
+.link {
   font-weight: bold;
 }
 
-.correo:hover {
+.link:hover {
   text-shadow: 2px 2px 8px white;
 }
 
