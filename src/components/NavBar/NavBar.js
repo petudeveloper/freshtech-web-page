@@ -45,7 +45,9 @@ const NavBar = () => {
               </Link>
             </DropdownItem>
             <DropdownItem className={styles.dropdownItem}>
-              <a href="mailto:freshtech.colombia@gmail.com">Contacto</a>
+              <Link to="/cotizar">
+                <span>Contacto</span>
+              </Link>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
