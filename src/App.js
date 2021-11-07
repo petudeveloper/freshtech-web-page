@@ -4,6 +4,7 @@ import {
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
+import QuotationForm from './pages/QuotationForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/about-us" component={AboutUs} />
+          <Route path="/cotizar" component={QuotationForm} />
           <Redirect from="/" to="/home" />
         </Switch>
       </div>

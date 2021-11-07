@@ -8,15 +8,15 @@ const Footer = () => (
       <Contacto
         sede="Cordoba"
         name="David A. Mazzo"
-        cargo="Ingeniero Comercial"
-        cel="+57 313-5330750"
+        cargo="Ingeniero de Proyectos"
+        cel="3135330750"
         correo="freshtech.colombia@gmail.com"
       />
       <Contacto
         sede="Antioquia"
         name="Felipe Velazquez"
         cargo="Ingeniero de Proyectos"
-        cel="+57 319-7292278"
+        cel="3197292278"
         correo="freshtech.colombia@gmail.com"
       />
     </div>
