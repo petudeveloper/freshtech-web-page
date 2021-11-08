@@ -20,9 +20,9 @@ class Form extends React.Component {
         <form
           name="contact v1"
           method="POST"
-          data-netlify="true"
           onSubmit="submit"
           className={styles.form}
+          netlify
         >
           <input type="hidden" name="form-name" value="contact v1" />
           <label className={styles.label} htmlFor="name">
