@@ -41,11 +41,18 @@ class Form extends React.Component {
           escribiéndonos al WhatsApp,
           o escribiéndonos un correo.
         </p>
-        <form className={styles.form}>
+        <form
+          name="contact v1"
+          method="post"
+          onSubmit="submit"
+          className={styles.form}
+        >
+          <input type="hidde" name="form-name" value="contact v1" />
           <label className={styles.label} htmlFor="name">
             <p className={styles.labelName}>Tu nombre (obligatorio)</p>
             <input
-              name="nombre"
+              id="name"
+              name="name"
               type="text"
               value={nombre}
               onChange={this.handleInputChange}
@@ -54,8 +61,9 @@ class Form extends React.Component {
           <label className={styles.label} htmlFor="email">
             <p className={styles.labelName}>Tu correo electrónico (obligatorio)</p>
             <input
+              id="email"
               name="email"
-              type="text"
+              type="email"
               value={email}
               onChange={this.handleInputChange}
             />
@@ -63,6 +71,7 @@ class Form extends React.Component {
           <label className={styles.label} htmlFor="whatsapp">
             <p className={styles.labelName}>WhatsApp (obligatorio)</p>
             <input
+              id="whatsapp"
               name="whatsapp"
               type="text"
               value={whatsapp}
@@ -72,6 +81,7 @@ class Form extends React.Component {
           <label className={styles.label} htmlFor="asunto">
             <p className={styles.labelName}>Asunto</p>
             <input
+              id="asunto"
               name="asunto"
               type="text"
               value={asunto}
@@ -80,7 +90,8 @@ class Form extends React.Component {
           </label>
           <label className={styles.label} htmlFor="mensaje">
             <p className={styles.labelName}>Tu mensaje</p>
-            <input
+            <textarea
+              id="mensaje"
               className={styles.mensaje}
               name="mensaje"
               type="text"
