@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
@@ -18,44 +17,68 @@ class Form extends React.Component {
           escribiéndonos al WhatsApp,
           o escribiéndonos un correo.
         </p>
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>
-              Your Name:
-              {' '}
-              <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email:
-              {' '}
-              <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Role:
-              {' '}
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select>
-
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              {' '}
-              <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+        <form
+          name="contact v1"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+          className={styles.form}
+          netlify
+        >
+          <input type="hidden" name="form-name" value="contact v1" />
+          <label className={styles.label} htmlFor="name">
+            <p className={styles.labelName}>Tu nombre (obligatorio)</p>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label className={styles.label} htmlFor="email">
+            <p className={styles.labelName}>Tu correo electrónico (obligatorio)</p>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label className={styles.label} htmlFor="whatsapp">
+            <p className={styles.labelName}>WhatsApp (obligatorio)</p>
+            <input
+              id="whatsapp"
+              name="whatsapp"
+              type="text"
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label className={styles.label} htmlFor="asunto">
+            <p className={styles.labelName}>Asunto</p>
+            <input
+              id="asunto"
+              name="asunto"
+              type="text"
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label className={styles.label} htmlFor="mensaje">
+            <p className={styles.labelName}>Tu mensaje</p>
+            <textarea
+              id="mensaje"
+              className={styles.mensaje}
+              name="mensaje"
+              type="text"
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <button
+            type="submit"
+            className={styles.button}
+          >
+            Enviar
+          </button>
         </form>
-
         <div>
           <a href="https://api.whatsapp.com/send?phone=573197292278">
             <BsWhatsapp className={styles.icon} />
