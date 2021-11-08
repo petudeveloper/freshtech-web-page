@@ -44,6 +44,7 @@ class Form extends React.Component {
         <form
           name="contact v1"
           method="post"
+          data-netlify="true"
           onSubmit="submit"
           className={styles.form}
         >
