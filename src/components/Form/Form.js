@@ -12,10 +12,11 @@ const Form = () => (
     </p>
     <form
       name="contactV1"
-      method="post"
       onSubmit="submit"
       className={styles.form}
-      netlify
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contactV1" />
       <label className={styles.label} htmlFor="name">
