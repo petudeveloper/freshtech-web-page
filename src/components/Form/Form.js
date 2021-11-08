@@ -11,14 +11,13 @@ const Form = () => (
       o escribiéndonos un correo.
     </p>
     <form
-      name="contact v1"
-      method="POST"
-      data-netlify="true"
+      name="contactV1"
+      method="post"
       onSubmit="submit"
       className={styles.form}
       netlify
     >
-      <input type="hidden" name="form-name" value="contact v1" />
+      <input type="hidden" name="form-name" value="contactV1" />
       <label className={styles.label} htmlFor="name">
         <p className={styles.labelName}>Tu nombre (obligatorio)</p>
         <input
