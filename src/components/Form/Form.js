@@ -19,11 +19,11 @@ const Form = () => (
       data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contactV1" />
-      <label className={styles.label} htmlFor="name">
+      <label className={styles.label} htmlFor="nombre">
         <p className={styles.labelName}>Tu nombre (obligatorio)</p>
         <input
-          id="name"
-          name="name"
+          id="nombre"
+          name="nombre"
           type="text"
         />
       </label>
