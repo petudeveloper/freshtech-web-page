@@ -17,7 +17,7 @@ const NavBar = () => {
           <img className={styles.logo} src="./images/FRESHTECH-logo.png" alt="freshtech-logo" />
         </Link>
         <ul className={styles.list}>
-          <Link to="/home">
+          <Link to="/">
             <li>Inicio</li>
           </Link>
           <Link to="/about-us">
@@ -35,7 +35,7 @@ const NavBar = () => {
           </DropdownToggle>
           <DropdownMenu>
             <DropdownItem className={styles.dropdownItem}>
-              <Link to="/home">
+              <Link to="/">
                 <span>Inicio</span>
               </Link>
             </DropdownItem>
