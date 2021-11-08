@@ -3,36 +3,11 @@ import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
 import styles from './Form.module.css';
 
 class Form extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      nombre: '',
-      email: '',
-      whatsapp: '',
-      asunto: '',
-      mensaje: '',
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-  }
-
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
-  handleInputChange(event) {
-    const { target } = event;
-    const { value } = target;
-    const { name } = target;
-    this.setState({
-      [name]: value,
-    });
-  }
-
   render() {
-    const {
-      nombre, email, whatsapp, asunto, mensaje,
-    } = this.state;
     return (
       <div className={styles.container}>
         <h2 className={styles.title}>ASESORÍA PROFESIONAL Y PERSONALIZADA</h2>
@@ -43,7 +18,7 @@ class Form extends React.Component {
         </p>
         <form
           name="contact v1"
-          method="post"
+          method="POST"
           data-netlify="true"
           onSubmit="submit"
           className={styles.form}
@@ -55,7 +30,6 @@ class Form extends React.Component {
               id="name"
               name="name"
               type="text"
-              value={nombre}
               onChange={this.handleInputChange}
             />
           </label>
@@ -65,7 +39,6 @@ class Form extends React.Component {
               id="email"
               name="email"
               type="email"
-              value={email}
               onChange={this.handleInputChange}
             />
           </label>
@@ -75,7 +48,6 @@ class Form extends React.Component {
               id="whatsapp"
               name="whatsapp"
               type="text"
-              value={whatsapp}
               onChange={this.handleInputChange}
             />
           </label>
@@ -85,7 +57,6 @@ class Form extends React.Component {
               id="asunto"
               name="asunto"
               type="text"
-              value={asunto}
               onChange={this.handleInputChange}
             />
           </label>
@@ -96,7 +67,6 @@ class Form extends React.Component {
               className={styles.mensaje}
               name="mensaje"
               type="text"
-              value={mensaje}
               onChange={this.handleInputChange}
             />
           </label>
