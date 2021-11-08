@@ -48,7 +48,7 @@ class Form extends React.Component {
           onSubmit="submit"
           className={styles.form}
         >
-          <input type="hidde" name="form-name" value="contact v1" />
+          <input type="hidden" name="form-name" value="contact v1" />
           <label className={styles.label} htmlFor="name">
             <p className={styles.labelName}>Tu nombre (obligatorio)</p>
             <input
