@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
 import styles from './Form.module.css';
@@ -70,11 +71,12 @@ class Form extends React.Component {
               onChange={this.handleInputChange}
             />
           </label>
-          <input
+          <button
             type="submit"
-            value="Enviar"
             className={styles.button}
-          />
+          >
+            Enviar
+          </button>
         </form>
         <div>
           <a href="https://api.whatsapp.com/send?phone=573197292278">
