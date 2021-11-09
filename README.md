@@ -14,6 +14,7 @@
 
 - JSX, JavaScript with ES6
 - React.js
+- Netlify, NetlifyForms.
 - Linters, Node.js, Git, Flexbox, React-Bootstrap
 
 ## Live demo
@@ -27,7 +28,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000/space-travelers/](http://localhost:3000/space-travelers/) to view it in the browser.
+Open [http://localhost:3000/](http://localhost:3000/) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -57,7 +58,7 @@ Your app is ready to be deployed!
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/petudeveloper/space-travelers/issues).
+Feel free to check the [issues page](https://github.com/petudeveloper/freshtech-web-page/issues).
 
 # Show your support
 
