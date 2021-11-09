@@ -12,10 +12,9 @@
 
 ## Built With
 
-- JSX, JavaScript with ES6
 - React.js
-- Netlify, NetlifyForms.
-- Linters, Node.js, Git, Flexbox, React-Bootstrap
+- Netlify, NetlifyForms
+- Linters, Git, React-Bootstrap
 
 ## Live demo
 
