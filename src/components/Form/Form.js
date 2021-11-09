@@ -15,8 +15,6 @@ const Form = () => (
       onSubmit="submit"
       className={styles.form}
       method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contactV1" />
       <label className={styles.label} htmlFor="nombre">
