@@ -13,7 +13,7 @@ const Card = ({ name, information }) => (
     <p className={styles.information}>{information}</p>
     <div className={styles.buttonContainer}>
       <button type="button" className={styles.button}>
-        <Link to="/cotizar" className={styles.buttonSpan}>Más Información</Link>
+        <Link to={`/linea/${name.toLowerCase()}`} className={styles.buttonSpan}>Más Información</Link>
       </button>
     </div>
   </li>
