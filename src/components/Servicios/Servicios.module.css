@@ -1,0 +1,98 @@
+.container {
+  background-color: white;
+  margin: 0;
+}
+
+.textH1Home {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px 5px;
+  margin: 0;
+  color: #0c5e9f;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.cardContainer {
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.image {
+  max-width: 100%;
+  height: 180px;
+}
+
+.information {
+  padding: 5px;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.buttonContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 15px;
+  background-color: #0a4e87;
+}
+
+.buttonSpan {
+  color: #00d6f2;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 8px rgb(173, 206, 255);
+  cursor: pointer;
+  color: #0c5e9f;
+  background-color: #03c5de;
+}
+
+@media (max-width: 1024px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 300px;
+  }
+
+  .cardName {
+    margin: 7px 0;
+  }
+
+  .information {
+    font-size: 1.1rem;
+  }
+
+  .buttonContainer {
+    position: relative;
+    border-bottom: solid 1px grey;
+    box-shadow: 0 4px 2px -2px gray;
+    padding-bottom: 25px;
+  }
+}

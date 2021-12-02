@@ -1,0 +1,66 @@
+.aboutContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContanier {
+  width: 300px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.prosContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 45px 25px;
+}
+
+.tittle {
+  text-align: center;
+}
+
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.pro:nth-child(1) {
+  background: #009fb5;
+}
+
+.pro:nth-child(2) {
+  background: #008192;
+}
+
+.pro:nth-child(3) {
+  background: #0c5e9f;
+}
+
+.pro:nth-child(4) {
+  background: #087bda;
+}
+
+.pro:nth-child(5) {
+  background: rgb(12, 126, 220);
+}
+
+.misionInformation {
+  padding: 25px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .prosContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
