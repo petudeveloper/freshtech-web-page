@@ -25,6 +25,7 @@ ul {
 .cardContainer {
   position: relative;
   padding-bottom: 35px;
+  color: #0d4472;
 }
 
 .image {

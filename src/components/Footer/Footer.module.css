@@ -1,6 +1,7 @@
 .container {
-  background-color: #0c5e9f;
-  padding: 25px;
+  padding: 15px;
+  margin-top: 25px;
+  border-top: 1px solid #0c5e9f;
 }
 
 .contactContainer {
@@ -16,22 +17,27 @@
 }
 
 .contact {
-  background-color: #03c5de;
   margin: 0 2%;
   padding-bottom: 10px;
+  color: #2a5b83;
+  border: 1px solid #2a5b83;
+}
+
+.contact a {
+  color: #2a5b83;
 }
 
 .sede {
   font-size: 1.2rem;
   padding: 10px;
   font-weight: bold;
-  color: #03c5de;
-  background-color: #0c5e9f;
+  color: #fff;
+  background-color: #0a4e87;
   border: solid 1px #03c5de;
 }
 
 .title {
-  color: #03c5de;
+  color: #0c5e9f;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
