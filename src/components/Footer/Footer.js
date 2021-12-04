@@ -14,7 +14,7 @@ const Footer = () => (
       />
       <Contacto
         sede="Antioquia"
-        name="Felipe Velazquez"
+        name="Felipe Velasquez"
         cargo="Director de Proyectos"
         cel="3197292278"
         correo="felipe.velasquez@freshtech-colombia.com"
