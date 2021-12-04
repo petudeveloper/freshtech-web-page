@@ -4,7 +4,7 @@ import styles from './Lineas.module.css';
 
 const Card = ({ name, information }) => (
   <li id={`${name}Card`} className={styles.cardContainer}>
-    <img className={styles.image} src={`./images/lineas/${name}.jpg`} alt={`${name}Card`} />
+    <img className={styles.image} src={`./images/lineas/${name}.jpg`.toLocaleLowerCase()} alt={`${name}Card`} />
     <h3 className={styles.cardName}>
       Linea
       {' '}
@@ -13,7 +13,7 @@ const Card = ({ name, information }) => (
     <p className={styles.information}>{information}</p>
     <div className={styles.buttonContainer}>
       <button type="button" className={styles.button}>
-        <Link to={`/lineas/${name.toLowerCase()}`} className={styles.buttonSpan}>Más Información</Link>
+        <Link to={`/linea/${name.toLowerCase()}`} className={styles.buttonSpan}>Más Información</Link>
       </button>
     </div>
   </li>
