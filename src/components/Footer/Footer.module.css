@@ -2,6 +2,7 @@
   padding: 15px;
   margin-top: 25px;
   border-top: 1px solid #0c5e9f;
+  background: #a9baff;
 }
 
 .contactContainer {
@@ -64,6 +65,7 @@
 
   .contact {
     margin: 0 0 25px 0;
+    font-size: 0.7rem;
   }
 }
 
