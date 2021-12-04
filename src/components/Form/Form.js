@@ -73,7 +73,7 @@ const Form = () => {
         <a href="https://api.whatsapp.com/send?phone=573197292278">
           <BsWhatsapp className={styles.icon} />
         </a>
-        <a href="mailto:freshtech.colombia@gmail.com">
+        <a href="mailto:felipe.velasquez@freshtech-colombia.com">
           <BsMailbox className={styles.icon} />
         </a>
       </div>

@@ -9,11 +9,11 @@ a {
 
 .navbar {
   padding: 5px;
-  background-color: #03c5de;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 5px 3px 8px 3px #ffffff70;
+  background: #e4e9fd;
 }
 
 .list {
@@ -24,7 +24,9 @@ a {
 
 .list li {
   padding: 7px;
-  color: #fff;
+  color: #0c5e9f;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .list li:hover,

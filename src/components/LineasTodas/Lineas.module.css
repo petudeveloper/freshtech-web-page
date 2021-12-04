@@ -11,7 +11,7 @@ ul {
 .cardsContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 
 .textH1Home {
@@ -25,11 +25,14 @@ ul {
 .cardContainer {
   position: relative;
   padding-bottom: 35px;
+  color: #0d4472;
+  border: 1px #0d4472 solid;
 }
 
 .image {
   max-width: 100%;
   height: 180px;
+  padding: 10px;
 }
 
 h3 {
@@ -37,7 +40,7 @@ h3 {
 }
 
 .information {
-  padding: 5px;
+  padding: 15px;
   font-size: 0.9rem;
   margin-bottom: 30px;
   text-align: justify;
@@ -86,6 +89,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: none;
   }
 
   .buttonContainer {
