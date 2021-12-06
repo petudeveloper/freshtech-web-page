@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 a {
   text-decoration: none;
 }
@@ -5,15 +7,49 @@ a {
 .logo {
   width: 70px;
   margin-left: 15px;
+  animation-name: rotatelogo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
+@keyframes rotatelogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.pageicon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pageicon p {
+  color: rgb(214, 250, 255);
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.pageicon p:hover {
+  color: #004a53;
+  text-shadow: 0 0 6px white;
+}
 .navbar {
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 3px 8px 3px #ffffff70;
-  background: #e4e9fd;
+  box-shadow: 5px 3px 8px 3px #2f4869;
+  background: #41546d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
 }
 
 .list {
@@ -22,17 +58,17 @@ a {
   margin: 0;
 }
 
-.list li {
+.list li a {
   padding: 7px;
-  color: #0c5e9f;
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .list li:hover,
 .logo:hover {
   transform: scale(1.1);
-  text-shadow: 2px 2px 8px white;
+  filter: drop-shadow(0 0 5px white);
   cursor: pointer;
 }
 
@@ -56,9 +92,17 @@ a {
   transform: scale(1.1);
 }
 
+.pagetitle {
+  display: inline-block;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row-reverse;
+  }
+
+  .pagetitle {
+    display: none;
   }
 
   .list {

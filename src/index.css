@@ -25,3 +25,35 @@ code {
     'Courier New',
     monospace;
 }
+
+.page-container {
+  margin: 70px 0 0 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar-track:hover {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15, 17, 32);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d707c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0075e2;
+  width: 12px;
+}
+
+.active,
+.active:visited {
+  color: rgb(153, 255, 255);
+  text-shadow: 0 0 5px white;
+}

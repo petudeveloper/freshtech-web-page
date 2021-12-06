@@ -4,30 +4,53 @@ import {
   Dropdown, DropdownItem, DropdownMenu, DropdownToggle,
 } from 'reactstrap';
 import { GoGrabber } from 'react-icons/go';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 
 const NavBar = () => {
   const [dropdown, setDropdown] = useState(false);
   const openCloseDropdown = () => setDropdown(!dropdown);
+
+  const menuLinks = [
+    {
+      id: 1,
+      link: '/',
+      text: 'Inicio',
+    },
+    {
+      id: 2,
+      link: '/about-us',
+      text: 'Nosotros',
+    },
+    {
+      id: 3,
+      link: '/cotizar',
+      text: 'Contacto',
+    },
+  ];
   return (
     <div>
       <nav className={styles.navbar}>
         <Link to="/">
-          <img className={styles.logo} src="./images/FRESHTECH-logo.png" alt="freshtech-logo" />
+          <div className={styles.pageicon}>
+            <img className={styles.logo} src="./images/FRESHTECH-logo-NO-Letters.ico" alt="freshtech-logo" />
+            <p className={styles.pagetitle}>FRESHTECH</p>
+          </div>
         </Link>
         <ul className={styles.list}>
-          <Link to="/">
-            <li>Inicio</li>
-          </Link>
-          <Link to="/about-us">
-            <li>Nosotros</li>
-          </Link>
-          <Link to="/cotizar">
-            <li>
-              Contacto
-            </li>
-          </Link>
+          {
+            menuLinks.map((item) => (
+              <li key={item.id}>
+                <NavLink
+                  to={item.link}
+                  activeclassname="active"
+                  exact="true"
+                >
+                  {item.text}
+                </NavLink>
+              </li>
+            ))
+          }
         </ul>
         <Dropdown isOpen={dropdown} toggle={openCloseDropdown} className={styles.dropdown}>
           <DropdownToggle className={styles.dropdownBtn}>
