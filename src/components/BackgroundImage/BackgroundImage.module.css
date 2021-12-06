@@ -21,8 +21,10 @@
 }
 
 .titleb {
-  color: rgb(24, 228, 255);
+  color: rgb(125, 225, 238);
   font-size: 60px;
+  font-weight: 900;
+  text-shadow: 0 0 5px rgb(160, 110, 185);
 }
 
 .textcontainer {
