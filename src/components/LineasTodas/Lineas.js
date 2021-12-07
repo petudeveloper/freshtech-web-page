@@ -11,16 +11,16 @@ const Lineas = () => {
   };
 
   return (
-    <ul id="lineas-container" className={styles.container}>
+    <div id="lineas-container" className="w-100 p-0 shadow mt-4">
       <h1 className={styles.textH1Home}>NUESTRAS LINEAS</h1>
-      <div className={styles.cardsContainer}>
+      <ul className="row m-0 p-0">
         <Card information={cardsInformation.Industrial} name="Industrial" />
         <Card information={cardsInformation.Comercial} name="Comercial" />
         <Card information={cardsInformation.Domestica} name="Domestica" />
         <Card information={cardsInformation.Oficina} name="Oficina" />
         <Card information={cardsInformation.Hospitalaria} name="Hospitalaria" />
-      </div>
-    </ul>
+      </ul>
+    </div>
   );
 };
 

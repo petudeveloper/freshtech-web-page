@@ -5,7 +5,7 @@ import ServicesData from './serviciosData';
 const Servicios = () => {
   const services = ServicesData;
   return (
-    <div id="servicios-container" className="w-100 p-0">
+    <div id="servicios-container" className="w-100 p-0 shadow my-5">
       <h1 className={styles.textH1Home}>SERVICIOS</h1>
       <ul className="row m-0 p-0">
         {
