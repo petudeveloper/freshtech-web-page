@@ -16,7 +16,6 @@ const Form = () => {
       </p>
       <form
         name="contactV1"
-        onSubmit="submit"
         className={styles.form}
         method="post"
       >
