@@ -2,7 +2,7 @@
   width: 80%;
   margin: 20px auto 0 auto;
   padding: 10px;
-  border-top: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid #c4c4c4;
 }
 
 .textH1Home {
@@ -25,7 +25,7 @@
 .cardContainer {
   position: relative;
   min-width: 0;
-  box-shadow: 0 0 10px 0 black;
+  box-shadow: 0 0 10px 0 #000000;
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -71,7 +71,7 @@
 
 .button:hover {
   transform: scale(1.1);
-  box-shadow: 2px 2px 8px rgb(173, 206, 255);
+  box-shadow: 2px 2px 8px #adceff;
   cursor: pointer;
   color: #0c5e9f;
   background-color: #03c5de;
@@ -80,7 +80,7 @@
 .cardName {
   margin: 7px 0;
   color: #2e6f77;
-  text-shadow: 0 0 6px rgb(59, 142, 145);
+  text-shadow: 0 0 6px #3b8e91;
 }
 
 .infobtn {
@@ -97,10 +97,17 @@
   color: white;
   font-size: 20px;
   border: 2px solid #2e6f77;
-  box-shadow: 0 0 20px 0 rgb(252, 255, 93);
+  box-shadow: 0 0 20px 0 #fcff5d;
 }
 
 @media (max-width: 1024px) {
+  .servicioscontainer {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-top: 1px solid #c4c4c4;
+  }
+
   .cardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -128,6 +135,6 @@
     width: 100%;
     margin: 20px auto 0 auto;
     padding: 10px;
-    border-top: 1px solid rgb(196, 196, 196);
+    border-top: 1px solid #c4c4c4;
   }
 }

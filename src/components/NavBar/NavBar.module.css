@@ -44,7 +44,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(180deg, #2e2e2e 0%, #2e6266 50%, #2e6266 100%);
   width: 100%;
   height: 8vh;
 }
