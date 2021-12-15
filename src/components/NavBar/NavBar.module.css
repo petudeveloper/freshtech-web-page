@@ -42,14 +42,11 @@ a {
 .navbar {
   padding: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 5px 3px 8px 3px #2f4869;
-  background: #41546d;
-  position: fixed;
-  top: 0;
+  background: linear-gradient(180deg, #2e2e2e 0%, #2e6266 50%, #2e6266 100%);
   width: 100%;
-  z-index: 900;
+  height: 8vh;
 }
 
 .list {

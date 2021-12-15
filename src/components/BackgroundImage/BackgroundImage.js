@@ -1,7 +1,7 @@
 import styles from './BackgroundImage.module.css';
 
 const Background = () => (
-  <div id="linea-container" className={styles.container}>
+  <div className={styles.container}>
     <div className={styles.mainImgHome}>
       <div className={styles.textcontainer}>
         <p className={styles.titlea}>Especialistas en:</p>

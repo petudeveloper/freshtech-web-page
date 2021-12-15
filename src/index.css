@@ -14,7 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(63, 105, 129);
+  background: linear-gradient(0deg, #000000 0%, #2e6266 60%, #2e6266 100%);
+  overflow: hidden;
 }
 
 code {
@@ -28,8 +29,9 @@ code {
 }
 
 .page-container {
-  margin: 70px 0 0 0;
   max-width: 100vw;
+  height: 92vh;
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +58,20 @@ code {
 
 .active,
 .active:visited {
-  color: rgb(153, 255, 255);
-  text-shadow: 0 0 5px white;
+  color: #39ffff;
+  text-shadow: 0 0 15px #ffffff;
+}
+
+.service-card {
+  background-color: #f7f7f1;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 0 black;
+}
+
+.service-card div img {
+  box-shadow: 0 0 5px 1px black;
+}
+
+.service-card div {
+  color: rgb(33, 109, 160);
 }

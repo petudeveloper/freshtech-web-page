@@ -1,15 +1,16 @@
-.container {
-  margin: 0;
-  padding: 30px;
-  max-width: 100vw;
+.servicioscontainer {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border-top: 1px solid rgb(196, 196, 196);
 }
 
 .textH1Home {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 20px 5px;
   margin: 0;
-  color: #0c5e9f;
+  color: #ffffff;
 }
 
 .cardsContainer {
@@ -76,6 +77,29 @@
   background-color: #03c5de;
 }
 
+.cardName {
+  margin: 7px 0;
+  color: #2e6f77;
+  text-shadow: 0 0 6px rgb(59, 142, 145);
+}
+
+.infobtn {
+  border-radius: 5px;
+  padding: 6px;
+  color: #2e6f77;
+  font-size: 20px;
+  border: 2px solid #2e6f77;
+}
+
+.infobtn:hover {
+  border-radius: 5px;
+  background-color: #2e6f77;
+  color: white;
+  font-size: 20px;
+  border: 2px solid #2e6f77;
+  box-shadow: 0 0 20px 0 rgb(252, 255, 93);
+}
+
 @media (max-width: 1024px) {
   .cardsContainer {
     display: grid;
@@ -89,10 +113,6 @@
     border: none;
   }
 
-  .cardName {
-    margin: 7px 0;
-  }
-
   .information {
     font-size: 1.1rem;
   }
@@ -100,5 +120,14 @@
   .buttonContainer {
     position: relative;
     padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicioscontainer {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-top: 1px solid rgb(196, 196, 196);
   }
 }

@@ -1,5 +1,7 @@
 .container {
- 
+ max-width: 80%;
+ height: 92vh;
+ margin: 0 auto 0 auto;
 }
 
 .mainImgHome {
@@ -38,7 +40,12 @@
   margin:10px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    height: 92vh;
+   }
+
   .mainImgHome {
     height: 90vh;
   }

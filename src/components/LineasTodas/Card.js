@@ -8,7 +8,7 @@ const Card = ({ name, information }) => (
       <div>
         <img className="w-100 rounded" src={`./images/lineas/${name}.jpg`.toLocaleLowerCase()} alt={`${name}Card`} />
       </div>
-      <div className="d-flex flex-column justify-content-between border">
+      <div className="d-flex flex-column justify-content-between">
         <h3 className={styles.cardName}>
           Linea
           {' '}
