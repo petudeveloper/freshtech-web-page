@@ -14,7 +14,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(0deg, #000000 0%, #2e6266 60%, #2e6266 100%);
+  background: linear-gradient(0deg, #000000dc 0%, #2e6266de 60%, #2e6266e0 100%), url('./img/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 

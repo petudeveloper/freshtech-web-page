@@ -4,8 +4,11 @@ ul {
 }
 
 .container {
-  background-color: white;
-  margin: 0;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  border-top: 1px solid white;
+  color: white;
+  padding: 10px;
 }
 
 .cardsContainer {
@@ -16,10 +19,9 @@ ul {
 
 .textH1Home {
   text-align: center;
-  font-size: 2rem;
-  padding: 20px 5px;
+  font-size: 3rem;
   margin: 0;
-  color: #0c5e9f;
+  color: #ffffff;
 }
 
 .cardContainer {
@@ -119,5 +121,13 @@ h3 {
 
   .lg {
     display: none;
+  }
+
+  .container {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px;
   }
 }
