@@ -38,6 +38,7 @@ const Lineas = () => {
           cardsInformation.map((card) => (
             <Card
               key={card.id}
+              id={card.id}
               information={card.text}
               name={card.name}
             />
