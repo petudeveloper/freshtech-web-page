@@ -21,6 +21,20 @@ body {
   overflow: hidden;
 }
 
+.invalid-inp {
+  border: 2px solid rgb(197, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(202, 27, 27);
+}
+
+.invalid-inp:focus {
+  border: 2px solid rgb(197, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(202, 27, 27);
+}
+
 code {
   font-family:
     source-code-pro,
