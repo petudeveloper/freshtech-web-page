@@ -63,16 +63,16 @@ const Form = () => {
   };
 
   const setAsunto = (e) => {
-    setFormData((prevState) => ({ ...prevState, asunto: e.target.value }));
-    const asunto = e.target.value.length > 5;
-    setMessages((prevState) => ({ ...prevState, asunto: (asunto ? null : 'Asunto debe ser mas de 5 characteres') }));
+    const { value } = e.target;
+    setFormData((prevState) => ({ ...prevState, asunto: value }));
+    setMessages((prevState) => ({ ...prevState, asunto: ((value.length > 5) ? null : 'Asunto debe ser mas de 5 characteres') }));
     btnValidation();
   };
 
   const setMensaje = (e) => {
-    setFormData((prevState) => ({ ...prevState, mensage: e.target.value }));
-    const msgImp = e.target.value.length > 10;
-    setMessages((prevState) => ({ ...prevState, mensage: (msgImp ? null : 'Mensaje debe tener mas de 10 characteres') }));
+    const { value } = e.target;
+    setFormData((prevState) => ({ ...prevState, mensage: value }));
+    setMessages((prevState) => ({ ...prevState, mensaje: ((value.length > 10) ? null : 'Mensaje debe tener mas de 10 characteres') }));
     btnValidation();
   };
 
@@ -103,6 +103,7 @@ const Form = () => {
             className={`${messages.nombre ? 'invalid-inp' : styles.inpform}`}
             value={formData.name}
             onChange={(e) => setNombre(e)}
+            placeholder="Nombre"
           />
           <p className={`text-muted position-absolute bottom-0 end-0 ${messages.nombre ? '' : 'd-none'}`}>{messages.nombre}</p>
         </div>
@@ -150,6 +151,7 @@ const Form = () => {
             className={`${messages.asunto ? 'invalid-inp' : styles.inpform}`}
             value={formData.asunto}
             onChange={(e) => setAsunto(e)}
+            placeholder="Asunto"
           />
           <p className={`text-muted position-absolute bottom-0 end-0 ${messages.asunto ? '' : 'd-none'}`}>{messages.asunto}</p>
         </div>
@@ -165,6 +167,7 @@ const Form = () => {
             rows="5"
             value={formData.mensaje}
             onChange={(e) => setMensaje(e)}
+            placeholder="Tu mensaje..."
           />
           <p className={`text-muted position-absolute bottom-0 end-0 ${messages.mensaje ? '' : 'd-none'}`}>{messages.mensaje}</p>
         </div>

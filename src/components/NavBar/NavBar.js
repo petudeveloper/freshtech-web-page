@@ -6,6 +6,7 @@ import {
 import { GoGrabber } from 'react-icons/go';
 import { NavLink, Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
+import logoImg from '../../img/logo.ico';
 
 const NavBar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -33,7 +34,7 @@ const NavBar = () => {
       <nav className={styles.navbar}>
         <Link to="/">
           <div className={styles.pageicon}>
-            <img className={styles.logo} src="./images/FRESHTECH-logo-NO-Letters.ico" alt="freshtech-logo" />
+            <img className={styles.logo} src={logoImg} alt="freshtech-logo" />
             <p className={styles.pagetitle}>FRESHTECH</p>
           </div>
         </Link>

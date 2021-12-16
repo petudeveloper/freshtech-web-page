@@ -1,15 +1,15 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 45px 45px 0 45px;
-  padding: 10px;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto 0 auto;
+  padding: 20px;
   border: solid 4px #0c5e9f;
-  height: 100%;
+  width: 80%;
 }
 
 .imageContainer {
   width: 100%;
-  background-color: aqua;
+  box-shadow: 0 0 15px 3px white;
 }
 
 .infoContainer {
