@@ -23,15 +23,17 @@ const Form = () => {
     window.scrollTo(0, 0);
   }, []);
   const btnValidation = () => {
-    const validateEmail = /\S+@\S+\.\S+/.test(formData.email);
-    const nombreImp = formData.nombre.length > 5;
-    if (nombreImp && validateEmail && (formData.mensage.length > 10)) {
-      setsubmitBtn(false);
-    } else {
-      setsubmitBtn(true);
-    }
+    const {
+      nombre, email, whatsapp, asunto, mensage,
+    } = formData;
+    const vnombre = nombre.length > 5;
+    const vemail = /\S+@\S+\.\S+/.test(email);
+    const vwhats = /^\d{3}-\d{3}-\d{4}$/.test(whatsapp);
+    const vasunto = asunto.length > 5;
+    const vmsg = mensage.length > 10;
+    console.log(vnombre, vemail, vwhats, vasunto, vmsg);
+    setsubmitBtn(!(vnombre && vemail && vwhats && vasunto && vmsg));
   };
-
   const setNombre = (e) => {
     setFormData((prevState) => ({ ...prevState, nombre: e.target.value }));
     const nombreImp = e.target.value.length > 5;
@@ -42,37 +44,43 @@ const Form = () => {
   const setEmail = (e) => {
     setFormData((prevState) => ({ ...prevState, email: e.target.value }));
     const validateEmail = /\S+@\S+\.\S+/.test(e.target.value);
-    setMessages((prevState) => ({ ...prevState, email: (validateEmail ? null : 'Formato de email es incorrecto!') }));
+    setMessages((prevState) => ({ ...prevState, email: (validateEmail ? null : 'Email debe de seguir el formato ejemplo@ejemplo.com!') }));
     btnValidation();
   };
 
   const setWhatsapp = (e) => {
-    const isNumber = /^\d+$/.test(e.target.value[e.target.value.length - 1]);
-    const emptyLine = e.target.value === '' || e.target.value[e.target.value.length - 1] === '-';
-    if (isNumber || emptyLine) {
-      setFormData((prevState) => ({ ...prevState, whatsapp: e.target.value }));
-      setMessages((prevState) => ({ ...prevState, whatsapp: null }));
+    const { value } = e.target;
+    const validValue = /^\d{3}-\d{3}-\d{4}$/.test(value);
+    const lastEntry = value[value.length - 1];
+    const isNumber = /^\d+$/.test(lastEntry);
+    const validEntry = value === '' || lastEntry === '-';
+    if (isNumber || validEntry) {
+      setFormData((prevState) => ({ ...prevState, whatsapp: value }));
+      setMessages((prevState) => ({ ...prevState, whatsapp: (validValue ? null : 'Whatsapp debe tener el formato 123-123-1234') }));
+      btnValidation();
     } else {
       setMessages((prevState) => ({ ...prevState, whatsapp: 'Solo numeros son validos!' }));
     }
-    const wvalid = /^\d{3}-\d{3}-\d{4}$/.test(formData.whatsapp);
-    setMessages((prevState) => ({ ...prevState, whatsapp: (wvalid ? null : 'Whatsapp debe tener el formato 123-123-1234') }));
-    btnValidation();
   };
 
   const setAsunto = (e) => {
     setFormData((prevState) => ({ ...prevState, asunto: e.target.value }));
+    const asunto = e.target.value.length > 5;
+    setMessages((prevState) => ({ ...prevState, asunto: (asunto ? null : 'Asunto debe ser mas de 5 characteres') }));
+    btnValidation();
   };
 
   const setMensaje = (e) => {
-    setFormData((prevState) => ({ ...prevState, mensaje: e.target.value }));
+    setFormData((prevState) => ({ ...prevState, mensage: e.target.value }));
+    const msgImp = e.target.value.length > 10;
+    setMessages((prevState) => ({ ...prevState, mensage: (msgImp ? null : 'Mensaje debe tener mas de 10 characteres') }));
     btnValidation();
   };
 
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>ASESORÍA PROFESIONAL Y PERSONALIZADA</h2>
-      <p className="text-white">
+      <p className="text-white text-center">
         Háganos su consulta diligenciando el siguiente formulario,
         escribiéndonos al WhatsApp,
         o escribiéndonos un correo.
@@ -111,6 +119,7 @@ const Form = () => {
             className={`${messages.email ? 'invalid-inp' : styles.inpform}`}
             value={formData.email}
             onChange={(e) => setEmail(e)}
+            placeholder="example@example.com"
           />
           <p className={`text-muted position-absolute bottom-0 end-0 ${messages.email ? '' : 'd-none'}`}>{messages.email}</p>
         </div>
@@ -124,26 +133,46 @@ const Form = () => {
             name="whatsapp"
             type="text"
             placeholder="123-123-1234"
-            className={styles.inpform}
+            className={`${messages.whatsapp ? 'invalid-inp' : styles.inpform}`}
             value={formData.whatsapp}
             onChange={(e) => setWhatsapp(e)}
           />
+          <p className={`text-muted position-absolute bottom-0 end-0 ${messages.whatsapp ? '' : 'd-none'}`}>{messages.whatsapp}</p>
         </div>
         <div className={styles.inputcontainer}>
-          <label className={styles.label} htmlFor="asunto">Asunto</label>
-          <input id="asunto" name="asunto" type="text" className={styles.inpform} value={formData.asunto} onChange={(e) => setAsunto(e)} />
+          <label className={styles.label} htmlFor="asunto">
+            Asunto
+            <p className="text-danger m-0">*</p>
+          </label>
+          <input
+            id="asunto"
+            name="asunto"
+            type="text"
+            className={`${messages.asunto ? 'invalid-inp' : styles.inpform}`}
+            value={formData.asunto}
+            onChange={(e) => setAsunto(e)}
+          />
+          <p className={`text-muted position-absolute bottom-0 end-0 ${messages.asunto ? '' : 'd-none'}`}>{messages.asunto}</p>
         </div>
         <div className={styles.inputcontainer}>
           <label className={styles.label} htmlFor="mensaje">
             Tu mensaje
             <p className="text-danger m-0">*</p>
           </label>
-          <textarea id="mensaje" className={styles.mensaje} name="mensaje" rows="5" value={formData.mensaje} onChange={(e) => setMensaje(e)} />
+          <textarea
+            id="mensaje"
+            className={`${messages.mensaje ? 'invalid-inp' : styles.inpform}`}
+            name="mensaje"
+            rows="5"
+            value={formData.mensaje}
+            onChange={(e) => setMensaje(e)}
+          />
+          <p className={`text-muted position-absolute bottom-0 end-0 ${messages.mensaje ? '' : 'd-none'}`}>{messages.mensaje}</p>
         </div>
         <div className="d-flex flex-column">
           <button
+            className={submitBtn ? styles.dbutton : styles.button}
             type="submit"
-            className={styles.button}
             disabled={submitBtn}
           >
             Enviar
@@ -155,7 +184,7 @@ const Form = () => {
           </p>
         </div>
       </form>
-      <div>
+      <div className="text-center">
         <a href="https://api.whatsapp.com/send?phone=573197292278">
           <BsWhatsapp className={styles.icon} />
         </a>

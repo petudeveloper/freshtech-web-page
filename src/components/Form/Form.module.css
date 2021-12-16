@@ -21,6 +21,24 @@
   position: relative;
 }
 
+.dbutton {
+  border: 2px solid #3f3f3f;
+  background-color: #5c5c5c;
+  color: #4e4e4e;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+}
+
+.dbutton:hover {
+  border: 2px solid #505050;
+  background-color: #5c5c5c;
+  color: #4e4e4e;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+}
+
 .inpform {
   border: 2px solid rgb(46, 99, 112);
   border-radius: 10px;
@@ -49,6 +67,7 @@
 .title {
   color: #ffffff;
   font-size: 2rem;
+  text-align: center;
 }
 
 .labelName {
@@ -77,6 +96,19 @@
 
 .icon {
   font-size: 2.5rem;
-  color: #0c5e9f;
+  color: #ffffff;
   margin: 30px 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
