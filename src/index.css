@@ -92,3 +92,19 @@ code {
 .service-card div {
   color: rgb(33, 109, 160);
 }
+
+.lineas-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .lineas-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
