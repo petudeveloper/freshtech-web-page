@@ -31,7 +31,6 @@ const Form = () => {
     const vwhats = /^\d{3}-\d{3}-\d{4}$/.test(whatsapp);
     const vasunto = asunto.length > 5;
     const vmsg = mensage.length > 10;
-    console.log(vnombre, vemail, vwhats, vasunto, vmsg);
     setsubmitBtn(!(vnombre && vemail && vwhats && vasunto && vmsg));
   };
   const setNombre = (e) => {

@@ -18,7 +18,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/cotizar" component={QuotationForm} />
-            <Route path="/linea/:linea" component={Lineas} />
+            <Route path="/linea/:id" component={Lineas} />
           </Switch>
         </div>
         <Footer />

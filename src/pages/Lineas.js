@@ -1,5 +1,5 @@
-/* eslint-disable max-len */
-import PropTypes from 'prop-types';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import Linea from '../components/Linea/Linea';
 
 const lineasObject = [
@@ -35,8 +35,10 @@ const lineasObject = [
   },
 ];
 
-const Lineas = ({ match }) => {
-  const lineaToRender = lineasObject.find((linea) => match.params.linea === linea.name.toLowerCase());
+const Lineas = () => {
+  const params = useParams();
+  const { id } = params;
+  const lineaToRender = lineasObject.find((linea) => linea.name.toLowerCase() === id);
   return (
     <div>
       <Linea
@@ -47,10 +49,6 @@ const Lineas = ({ match }) => {
       />
     </div>
   );
-};
-
-Lineas.propTypes = {
-  match: PropTypes.isRequired,
 };
 
 export default Lineas;
