@@ -6,9 +6,7 @@
 
 - The freshtech-web-page is a responsive web application for a company that provides solutions for the HVCA sector. Built with React.
 
-![screenshot (TBA)](./docs/screenshot1.PNG)
-![screenshot (TBA)](./docs/screenshot2.PNG)
-![screenshot (TBA)](./docs/screenshot3.PNG)
+![screenshot (TBA)](./docs/v2-jar.png)
 
 ## Built With
 
@@ -52,6 +50,12 @@ Your app is ready to be deployed!
 - GitHub: [@David Alvarez](https://github.com/petudeveloper)
 - Twitter: [@David](https://twitter.com/petudeveloper)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/davidalvarezmazzo/)
+
+👤 **Jose Alberto Arriaga Ramos**
+
+- GitHub: [@jaarkira](https://github.com/jaarkira )
+- Twitter: [@91_jaar](https://twitter.com/91_jaar )
+- LinkedIn: [Jose Arriaga](https://www.linkedin.com/in/jaar/)
 
 # 🤝 Contributing
 
