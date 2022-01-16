@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import styles from './Lineas.module.css';
 
 const Card = ({ id, name, information }) => (
-  <li className="col-12 col-md-6 col-xl-4 p-2">
+  <li className={`${styles.li} col-12 col-md-6 col-xl-4 p-2`}>
     <div className={styles.cardcontainer}>
       <h3 className={styles.cardName}>
         Linea
