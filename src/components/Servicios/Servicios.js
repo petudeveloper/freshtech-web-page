@@ -10,14 +10,14 @@ const Servicios = () => {
       <ul className="row m-0 p-0">
         {
           services.map((service, index) => {
-            const photoDiv = `col-12 col-sm-6 col-md-12 col-xl-6 p-1 
-            ${(([1, 0][index % 2]) === 0 ? 'order-sm-0' : 'order-sm-1')}
+            const photoDiv = `d-flex col-12 col-sm-6 col-md-12 col-xl-12 p-1 
+            ${(([1, 0][index % 2]) === 0 ? 'order-sm-0' : 'order-sm-0')}
             ${(([1, 0, 0, 1][index % 4]) === 0 ? 'order-xl-1' : 'order-xl-0')} 
             order-md-0
             `;
-            const infoDiv = `col-12 col-sm-6 col-md-12 col-xl-6 d-flex flex-column justify-content-around 
+            const infoDiv = `col-12 col-sm-6 col-md-12 col-xl-12 d-flex flex-column justify-content-around 
             ${(([1, 0][index % 2]) === 0 ? 'order-sm-1' : 'order-sm-0')} 
-            ${(([1, 0, 0, 1][index % 4]) === 0 ? 'order-xl-0' : 'order-xl-1')} 
+            ${(([1, 0, 0, 1][index % 4]) === 0 ? 'order-xl-1' : 'order-xl-1')} 
             order-md-1
             `;
             return (
