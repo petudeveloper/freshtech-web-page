@@ -88,8 +88,10 @@ h3 {
   border-radius: 10px;
 }
 
-.li:nth-last-child(-n+2) {
-  transform:translateX(50%); 
+@media (min-width: 1200px) {
+  .li:nth-last-child(-n+2) {
+    transform:translateX(50%); 
+  }
 }
 
 @media(max-width: 1200px) and (min-width: 768px){
