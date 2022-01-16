@@ -21,6 +21,7 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
   padding: 45px 25px;
+  text-align: center;
 }
 
 .tittle {
