@@ -23,20 +23,18 @@
 
 .dbutton {
   border: 2px solid #3f3f3f;
-  background-color: #5c5c5c;
   color: #4e4e4e;
   padding: 10px;
   border-radius: 10px;
-  margin: 0 auto 0 auto;
 }
 
 .dbutton:hover {
   border: 2px solid #505050;
   background-color: #5c5c5c;
-  color: #4e4e4e;
+  color: #ffffffc0;
   padding: 10px;
   border-radius: 10px;
-  margin: 0 auto 0 auto;
+  cursor: pointer;
 }
 
 .inpform {

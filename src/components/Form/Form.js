@@ -171,7 +171,7 @@ const Form = () => {
           />
           <p className={`text-muted position-absolute bottom-0 end-0 ${messages.mensaje ? '' : 'd-none'}`}>{messages.mensaje}</p>
         </div>
-        <div className="d-flex flex-column">
+        <div className="d-flex justify-content-between">
           <button
             className={submitBtn ? styles.dbutton : styles.button}
             type="submit"
