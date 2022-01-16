@@ -7,7 +7,7 @@ const Background = () => (
         <p className={styles.titleb}>FRESHTECH</p>
         <p className={styles.titlea}>Somos especialistas en:</p>
         <p className={styles.titleb}>Dieseño, Instalacion y Mantenimiento</p>
-        <p className={styles.titlea}>de sistemas de aire acondicionado</p>
+        <p className={styles.titlea}>de sistemas de Aire Acondicionado y Eléctricos.</p>
       </div>
     </div>
   </div>

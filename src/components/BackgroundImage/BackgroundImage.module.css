@@ -19,6 +19,7 @@
 .titlea {
   color: white;
   font-size: 50px;
+  text-align: center;
 }
 
 .titleb {
@@ -26,6 +27,7 @@
   font-size: 60px;
   font-weight: 900;
   text-shadow: 0 0 5px rgb(160, 110, 185);
+  text-align: center;
 }
 
 .textcontainer {
