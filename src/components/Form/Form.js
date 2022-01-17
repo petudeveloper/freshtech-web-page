@@ -86,7 +86,6 @@ const Form = () => {
       </p>
       <form
         name="contactV1"
-        onSubmit={(e) => e.preventDefault()}
         className={styles.form}
         method="post"
       >
