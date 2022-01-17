@@ -1,35 +1,26 @@
 import PropTypes from 'prop-types';
-import { useEffect } from 'react/';
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs';
 import styles from './Linea.module.css';
 
 const Linea = ({
   name, imageUrl, info, adicional,
-}) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return (
-    <div>
-
-      <div className={styles.container}>
-        <div className={styles.imageContainer}>
-          <img src={imageUrl} alt={`linea${name}`} className={styles.image} />
-        </div>
-        <div className={styles.infoContainer}>
-          <h2 className={styles.title}>
-            Linea
-            {' '}
-            {name}
-          </h2>
-          <p className={styles.info}>
-            {info}
-          </p>
-          <p className={styles.adicional}>
-            {adicional}
-          </p>
-        </div>
-      </div>
+}) => (
+  <div className={styles.container}>
+    <div className={styles.imageContainer}>
+      <img src={imageUrl} alt={`linea${name}`} className={styles.image} />
+    </div>
+    <div className={styles.infoContainer}>
+      <h2 className={styles.title}>
+        Linea
+        {' '}
+        {name}
+      </h2>
+      <p className={styles.info}>
+        {info}
+      </p>
+      <p className={styles.adicional}>
+        {adicional}
+      </p>
       <div className={styles.masInformacionContainer}>
         <h6>Mas información</h6>
         <a href="https://api.whatsapp.com/send?phone=573197292278">
@@ -40,8 +31,8 @@ const Linea = ({
         </a>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 Linea.propTypes = {
   name: PropTypes.string.isRequired,

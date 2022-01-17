@@ -14,6 +14,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #000 0%, #2e6266ea 40%, #2e6266ea 80%, #000 100%), url('./img/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.invalid-inp {
+  border: 2px solid rgb(197, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(202, 27, 27);
+}
+
+.invalid-inp:focus {
+  border: 2px solid rgb(197, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(202, 27, 27);
 }
 
 code {
@@ -24,4 +43,68 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.page-container {
+  max-width: 100vw;
+  height: 92vh;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15, 17, 32);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d707c;
+}
+
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar-track:hover {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0075e2;
+  width: 12px;
+}
+
+.active,
+.active:visited {
+  color: #39ffff;
+  text-shadow: 0 0 15px #fff;
+}
+
+.service-card {
+  background-color: #f7f7f1;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 0 black;
+}
+
+.service-card div img {
+  box-shadow: 0 0 5px 1px black;
+}
+
+.service-card div {
+  color: rgb(33, 109, 160);
+}
+
+.lineas-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .lineas-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }

@@ -3,7 +3,7 @@ import BackgroundImage from '../components/BackgroundImage/BackgroundImage';
 import Servicios from '../components/Servicios/Servicios';
 
 const Home = () => (
-  <div id="home">
+  <div>
     <BackgroundImage />
     <Servicios />
     <Lineas />

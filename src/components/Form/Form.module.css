@@ -1,32 +1,70 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 15px;
+  background-color: #ffffffc0;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto 0 auto;
 }
 
 .container {
-  margin-top: 45px;
-  text-align: center;
-  padding: 35px;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+}
+
+.inputcontainer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 0 0 40px 0;
+  position: relative;
+}
+
+.dbutton {
+  border: 2px solid #3f3f3f;
+  color: #4e4e4e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dbutton:hover {
+  border: 2px solid #505050;
+  background-color: #5c5c5c;
+  color: #ffffffc0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inpform {
+  border: 2px solid rgb(46, 99, 112);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(20, 107, 122);
+}
+
+.inpform:focus {
+  border: 2px solid #46d2f5;
+  box-shadow: 0 0 5px 0 rgb(47, 102, 104);
 }
 
 .label {
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 7px 0;
 }
 
 .mensaje {
-  min-height: 150px;
-  line-height: 1.5;
-  resize: vertical;
+  border: 2px solid rgb(46, 99, 112);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(20, 107, 122);
 }
 
 .title {
-  color: #0c5e9f;
+  color: #fff;
   font-size: 2rem;
+  text-align: center;
 }
 
 .labelName {
@@ -37,16 +75,37 @@
 }
 
 .button {
-  border: none;
-  border-radius: 3px;
-  padding: 5px 15px;
-  background-color: #0a4e87;
-  color: #00d6f2;
-  margin-top: 15px;
+  border: 2px solid #2b676b;
+  color: #2b676b;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+}
+
+.button:hover {
+  border: 2px solid #2b676b;
+  background-color: #2b676b;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
 }
 
 .icon {
   font-size: 2.5rem;
-  color: #0c5e9f;
+  color: #fff;
   margin: 30px 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+  }
 }

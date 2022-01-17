@@ -1,83 +1,57 @@
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import styles from './Servicios.module.css';
+import ServicesData from './serviciosData';
 
-const Servicios = () => (
-  <div id="servicios-container" className={styles.container}>
-    <h1 className={styles.textH1Home}>SERVICIOS</h1>
-    <ul className={styles.cardsContainer}>
-      <li id="asesorias-Card" className={styles.cardContainer}>
-        <img className={styles.image} src="./images/servicios/Asesorias.jpg" alt="asesoriasCard" />
-        <h3 className={styles.cardName}>
-          Asesorias
-        </h3>
-        <ul className={styles.information}>
-          <li>1. Proyectos de instalación de sistemas de aire acondicionado.</li>
-          <li>2. Mantenimientos preventivos y correctivos.</li>
-        </ul>
-        <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>
-            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
-          </button>
-        </div>
-      </li>
-      <li id="diseño-Card" className={styles.cardContainer}>
-        <img className={styles.image} src="./images/servicios/Diseño.jpg" alt="diseñoCard" />
-        <h3 className={styles.cardName}>
-          Diseño
-        </h3>
-        <ul className={styles.information}>
-          <li>1. Sistemas VRF.</li>
-          <li>
-            2. Sistemas aire acondicionado de expansión directa tipo Split, cassette,
-            piso techo, centrales, fancoil.
-          </li>
-          <li>3. Sistemas aires acondicionados hidrónicos.</li>
-          <li>4. Sistemas de ventilación y extracción.</li>
-        </ul>
-        <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>
-            <Link to="/cotizar" className={styles.buttonSpan}>Cotizar</Link>
-          </button>
-        </div>
-      </li>
-      <li id="Instalacion-Card" className={styles.cardContainer}>
-        <img className={styles.image} src="./images/servicios/Instalacion.jpg" alt="instalacionCard" />
-        <h3 className={styles.cardName}>
-          Instalación
-        </h3>
-        <ul className={styles.information}>
-          <li>1. Sistemas VRF.</li>
-          <li>
-            2. Sistemas aire acondicionado de expansión directa tipo Split, cassette,
-            piso techo, centrales, fancoil, multi v.
-          </li>
-          <li>3. Sistemas aires acondicionados hidrónicos.</li>
-          <li>4. Sistemas de ventilación y extracción.</li>
-        </ul>
-        <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>
-            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
-          </button>
-        </div>
-      </li>
-      <li id="Mantenimiento-Card" className={styles.cardContainer}>
-        <img className={styles.image} src="./images/servicios/Mantenimiento.jpg" alt="mantenimientoCard" />
-        <h3 className={styles.cardName}>
-          Mantenimiento
-        </h3>
-        <ul className={styles.information}>
-          <li>1. Mantenimiento preventivo.</li>
-          <li>2. Mantenimiento correctivo.</li>
-          <li>3. Mantenimiento predictivo.</li>
-        </ul>
-        <div className={styles.buttonContainer}>
-          <button type="button" className={styles.button}>
-            <Link to="/Cotizar" className={styles.buttonSpan}>Cotizar</Link>
-          </button>
-        </div>
-      </li>
-    </ul>
-  </div>
-);
+const Servicios = () => {
+  const services = ServicesData;
+  return (
+    <div className={styles.servicioscontainer}>
+      <h1 className={styles.textH1Home}>SERVICIOS</h1>
+      <ul className="row m-0 p-0">
+        {
+          services.map((service, index) => {
+            const photoDiv = `d-flex col-12 col-sm-6 col-md-12 col-xl-12 p-1 
+            ${(([1, 0][index % 2]) === 0 ? 'order-sm-0' : 'order-sm-0')}
+            ${(([1, 0, 0, 1][index % 4]) === 0 ? 'order-xl-1' : 'order-xl-0')} 
+            order-md-0
+            `;
+            const infoDiv = `col-12 col-sm-6 col-md-12 col-xl-12 d-flex flex-column justify-content-around 
+            ${(([1, 0][index % 2]) === 0 ? 'order-sm-1' : 'order-sm-0')} 
+            ${(([1, 0, 0, 1][index % 4]) === 0 ? 'order-xl-1' : 'order-xl-1')} 
+            order-md-1
+            `;
+            return (
+              <li key={service.id} className="col-sm-12 col-md-6 col-lg-6 p-3">
+                <div className="service-card p-3 h-100 row m-0">
+                  <div className={photoDiv}>
+                    <img className="w-100 rounded m-0" src={service.img} alt="asesoriasCard" />
+                  </div>
+                  <div className={infoDiv}>
+                    <h3 className={styles.cardName}>{service.title}</h3>
+                    <ul className="list-style-none">
+                      {
+                        service.body.map((item, index) => {
+                          const key = index + 1;
+                          return (
+                            <li key={key}>
+                              {item}
+                            </li>
+                          );
+                        })
+                      }
+                    </ul>
+                    <div className="text-center">
+                      <Link to="/Cotizar" className={styles.infobtn}>Cotizar</Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  );
+};
 
 export default Servicios;

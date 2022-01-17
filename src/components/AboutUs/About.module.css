@@ -1,9 +1,10 @@
 .aboutContainer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #2a5b83;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
 
 .logoContanier {
@@ -20,10 +21,14 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
   padding: 45px 25px;
+  text-align: center;
 }
 
 .tittle {
   text-align: center;
+  font-size: 50px;
+  color: rgb(153, 252, 255);
+  text-shadow: 0 0 20px #fff;
 }
 
 .pro {
@@ -32,7 +37,8 @@
   align-items: center;
   height: 20vh;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
 }
 
 .pro:nth-child(1) {
@@ -55,15 +61,88 @@
   background: rgb(12, 126, 220);
 }
 
+.pro:nth-child(1):hover {
+  box-shadow: 0 0 25px 2px white, inset 0 0 50px 2px rgb(30, 80, 88);
+  background: url("https://www.we-accom.com/wp-content/uploads/marketing-de-experiencias-e1578580137909.png");
+  background-position: center;
+  background-size: cover;
+  color: #fff0;
+}
+
+.pro:nth-child(2):hover {
+  box-shadow: 0 0 25px 2px white, inset 0 0 50px 2px rgb(30, 80, 88);
+  background: url("https://1.bp.blogspot.com/-ohlglbeMPoQ/XoNmZ2jF9qI/AAAAAAAABxo/YMt_S6lEMdo5_c1dtESUqSj1shG64XtsgCLcBGAsYHQ/s1600/calidad.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff0;
+}
+
+.pro:nth-child(3):hover {
+  box-shadow: 0 0 25px 2px white, inset 0 0 50px 2px rgb(30, 80, 88);
+  background: url("https://www.ld.com.mx/blog/wp-content/uploads/2019/04/atenci%C3%B3n-al-cliente.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff0;
+}
+
+.pro:nth-child(4):hover {
+  box-shadow: 0 0 25px 2px white, inset 0 0 50px 2px rgb(30, 80, 88);
+  background: url("https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/importance-of-having-savings-717x404.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff0;
+}
+
+.pro:nth-child(5):hover {
+  box-shadow: 0 0 25px 2px white, inset 0 0 50px 2px rgb(30, 80, 88);
+  background: url("../../img/muchomas.png");
+  background-position: center;
+  background-size: cover;
+  color: #fff0;
+}
+
 .misionInformation {
   padding: 25px;
   text-align: justify;
+  font-size: 20px;
+  color: rgb(206, 255, 239);
+}
+
+@media (max-width: 1024px) {
+  .prosContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 45px 25px;
+  }
 }
 
 @media (max-width: 768px) {
   .prosContainer {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 45px 25px;
+  }
+
+  .aboutContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .prosContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 45px 25px;
   }
 }
