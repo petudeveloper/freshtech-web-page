@@ -20,8 +20,8 @@ function App() {
             <Route path="/cotizar" component={QuotationForm} />
             <Route path="/linea/:id" component={Lineas} />
           </Switch>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </Router>
   );

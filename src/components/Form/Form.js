@@ -132,7 +132,7 @@ const Form = () => {
             id="whatsapp"
             name="whatsapp"
             type="text"
-            placeholder="123-123-1234"
+            placeholder="313-123-1234"
             className={`${messages.whatsapp ? 'invalid-inp' : styles.inpform}`}
             value={formData.whatsapp}
             onChange={(e) => setWhatsapp(e)}
