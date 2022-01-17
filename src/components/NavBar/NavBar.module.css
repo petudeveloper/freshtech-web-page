@@ -17,6 +17,7 @@ a {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(-360deg);
   }
@@ -40,6 +41,7 @@ a {
   color: #004a53;
   text-shadow: 0 0 6px white;
 }
+
 .navbar {
   padding: 5px;
   display: flex;
@@ -57,7 +59,7 @@ a {
 
 .list li a {
   padding: 7px;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
 }

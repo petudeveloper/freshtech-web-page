@@ -36,14 +36,14 @@
 .image {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 10px 1px #000000;
+  box-shadow: 0 0 10px 1px #000;
   aspect-ratio: 1/1;
 }
 
 .title {
   font-size: 2.1rem;
   color: #f1f9ff;
-  text-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #fff;
 }
 
 .masInformacionContainer {
@@ -54,7 +54,7 @@
 .icon {
   font-size: 2rem;
   margin: 0 10px;
-  color: #ffffff;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {

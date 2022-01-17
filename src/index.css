@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #000000 0%, #2e6266ea 40%,#2e6266ea 80%, #000000 100%), url('./img/background.jpg');
+  background: linear-gradient(-45deg, #000 0%, #2e6266ea 40%, #2e6266ea 80%, #000 100%), url('./img/background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,17 +55,17 @@ code {
   width: 8px;
 }
 
-::-webkit-scrollbar:hover,
-::-webkit-scrollbar-track:hover {
-  width: 12px;
-}
-
 ::-webkit-scrollbar-track {
   background: rgb(15, 17, 32);
 }
 
 ::-webkit-scrollbar-thumb {
   background: #2d707c;
+}
+
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar-track:hover {
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -76,7 +76,7 @@ code {
 .active,
 .active:visited {
   color: #39ffff;
-  text-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #fff;
 }
 
 .service-card {

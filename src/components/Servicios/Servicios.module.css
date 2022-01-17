@@ -10,7 +10,7 @@
   font-size: 3rem;
   padding: 20px 5px;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
 }
 
 .cardsContainer {
@@ -25,7 +25,7 @@
 .cardContainer {
   position: relative;
   min-width: 0;
-  box-shadow: 0 0 10px 0 #000000;
+  box-shadow: 0 0 10px 0 #000;
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -55,26 +55,6 @@
   bottom: 10px;
   display: flex;
   justify-content: center;
-}
-
-.button {
-  border: none;
-  border-radius: 3px;
-  padding: 5px 15px;
-  background-color: #0a4f8700;
-  border: 1px solid #007d8d;
-}
-
-.button a {
-  color: #007d8d;
-}
-
-.button:hover {
-  transform: scale(1.1);
-  box-shadow: 2px 2px 8px #adceff;
-  cursor: pointer;
-  color: #0c5e9f;
-  background-color: #03c5de;
 }
 
 .cardName {
