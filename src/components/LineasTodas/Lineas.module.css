@@ -176,6 +176,7 @@ h3 {
     flex-direction: column;
     padding: 10px;
     width: 50%;
+    justify-content: center;
   }
 }
 

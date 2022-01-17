@@ -22,7 +22,7 @@ const Servicios = () => {
             `;
             return (
               <li key={service.id} className="col-sm-12 col-md-6 col-lg-6 p-3">
-                <div className="service-card p-2 h-100 row m-0">
+                <div className="service-card p-3 h-100 row m-0">
                   <div className={photoDiv}>
                     <img className="w-100 rounded m-0" src={service.img} alt="asesoriasCard" />
                   </div>
