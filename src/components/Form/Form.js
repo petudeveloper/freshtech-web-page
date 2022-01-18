@@ -49,7 +49,7 @@ const Form = () => {
 
   const setWhatsapp = (e) => {
     const { value } = e.target;
-    const validValue = /^\d{3}-\d{3}-\d{4}$/.test(value);
+    const validValue = /^\d{10}$/.test(value);
     const lastEntry = value[value.length - 1];
     const isNumber = /^\d+$/.test(lastEntry);
     const validEntry = value === '' || lastEntry === '-';
