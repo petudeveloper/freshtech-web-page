@@ -13,7 +13,7 @@ const ServicesData = [
   {
     id: 2,
     img: './images/servicios/Instalacion.jpg',
-    title: 'Instalacion',
+    title: 'Instalación',
     body: [
       '1. Sistemas VRF.',
       '2. Sistemas aire acondicionado de expansión directa tipo Split, cassette, piso techo, centrales, fancoil, multi v.',
