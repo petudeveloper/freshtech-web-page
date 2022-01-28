@@ -12,13 +12,6 @@ const Footer = () => (
         cel="3135330750"
         correo="david.alvarez@freshtech-colombia.com"
       />
-      <Contacto
-        sede="Antioquia"
-        name="Felipe Velasquez"
-        cargo="Director de Proyectos"
-        cel="3197292278"
-        correo="felipe.velasquez@freshtech-colombia.com"
-      />
     </div>
   </div>
 );
