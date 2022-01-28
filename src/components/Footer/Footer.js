@@ -6,13 +6,6 @@ const Footer = () => (
     <p className={styles.title}>Sómos tu aliado. Contáctanos!</p>
     <div className={styles.contactContainer}>
       <Contacto
-        sede="Cordoba"
-        name="David A. Mazzo"
-        cargo="Ingeniero de Proyectos"
-        cel="3135330750"
-        correo="david.alvarez@freshtech-colombia.com"
-      />
-      <Contacto
         sede="Antioquia"
         name="Felipe Velasquez"
         cargo="Director de Proyectos"
